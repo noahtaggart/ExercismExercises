@@ -3,8 +3,7 @@ defmodule Username do
   ''
   end
   def sanitize([head | tail]) do
-    # ä becomes ae
-    #
+
   result = case head do
     ?ä -> 'ae'
     ?ö -> 'oe'
